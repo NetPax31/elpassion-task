@@ -1,6 +1,8 @@
 $color-body: #ffffff;
+
 $color-primary: #f6f6f6;
 $color-secondary: #101022;
+
 $color-data-bg: #ffffff;
 $color-data-text: #080606;
 $color-data-info: #8a8995;
@@ -26,6 +28,7 @@ $radius-primary: 4px;
   background: $color;
   background: rgba($color, $opacity);
 }
+
 /*** OVERALL ***/
 
 html, body {
@@ -38,6 +41,7 @@ body {
   background: $color-body url('../img/background.jpg') no-repeat top center;
   background-size: cover;
   font-family: $font-main;
+  overflow: auto;
 }
 
 /*** CONSTRUCTION ***/
@@ -80,6 +84,7 @@ body {
 }
 
 /*** NAVIGATION ***/
+
 .nav {
   display: block;
 
@@ -129,6 +134,7 @@ body {
     }
   }
 }
+
 /*** SECTIONS ***/
 
 .section {
@@ -193,9 +199,9 @@ body {
 
 .icon {
   &--inactive {
-    fill: #ffffff;
+    fill: $color-data-bg;
     fill-rule: evenodd;
-  	stroke: #ccc;
+  	stroke: $color-data-border;
     transition: $trnas-primary;
   }
 
