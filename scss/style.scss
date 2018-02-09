@@ -17,6 +17,11 @@ $trnas-primary: all 0.5s ease;
 $space-primary: 5px;
 $radius-primary: 4px;
 
+@mixin space-reset {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin background-opacity($color, $opacity) {
   background: $color;
   background: rgba($color, $opacity);
@@ -25,9 +30,8 @@ $radius-primary: 4px;
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   width: 100%;
+  @include space-reset;
 }
 
 body {
@@ -78,8 +82,7 @@ body {
 
 .nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include space-reset;
 
   &--main {
     font-size: 14px;
