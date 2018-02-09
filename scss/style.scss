@@ -37,7 +37,7 @@ html, body {
 body {
   background: $color-body url('../img/background.jpg') no-repeat top center;
   background-size: cover;
-  font-family: $font-main
+  font-family: $font-main;
 }
 
 /*** CONSTRUCTION ***/
@@ -67,9 +67,9 @@ body {
 .content {
   background: $color-primary;
   box-sizing: border-box;
-  width: 500px;
   overflow: auto;
   padding: $space-primary*2 $space-primary*3 0 $space-primary*3;
+  width: 500px;
 }
 
 .window-buttons {
