@@ -50,6 +50,43 @@ body {
   padding: 15px;
 }
 
+/*** NAVIGATION ***/
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav--main {
+  font-size: 14px;
+  line-height: 21px;
+}
+.nav--main .nav__link {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 14.5px 15px;
+  transition: all 0.5s ease;
+}
+.nav--main .nav__link:link, .nav--main .nav__link:hover, .nav--main .nav__link:focus, .nav--main .nav__link:active {
+  text-decoration: none;
+}
+.nav--main .nav__link:hover, .nav--main .nav__link--active {
+  background: #292a48;
+}
+.nav--main .nav__icon {
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+.nav--main .nav__anchor {
+  margin: 0 10px;
+}
+.nav--main .nav__info {
+  color: #8a8995;
+  margin-left: auto;
+}
+
 /*** BUTTONS ***/
 .btn--osx {
   border-radius: 5px;
