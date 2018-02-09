@@ -1,0 +1,19 @@
+$bg-body: #ffffff;
+$bg-data: #ffffff;
+
+$font-main: "Roboto", sans-serif;
+
+/*** OVERALL ***/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: $bg-body url('../img/background.jpg') no-repeat top center;
+  background-size: cover;
+  font-family: $font-main
+}
