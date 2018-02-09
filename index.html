@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Wojciech Stawarz | El Passion recruitment task</title>
@@ -134,16 +135,17 @@
       </main>
     </div>
   </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-    var icons = document.querySelectorAll('.icon');
-    for (var i = 0; i < icons.length; i++) {
-      icons[i].addEventListener('click', toggleClass);
-    }
-
-    function toggleClass() {
-      this.classList.toggle('icon--inactive');
-      this.classList.toggle('icon--active');
-    }
-  </script>
+  $(function() {
+    $('.icon').each(function () {
+      var $this = $(this);
+      $this.on("click", function () {
+        $this.toggleClass('icon--inactive');
+        $this.toggleClass('icon--active');
+      });
+    });
+  })
+  </script>  
 </body>
 </html>
