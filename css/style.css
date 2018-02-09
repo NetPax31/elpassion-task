@@ -32,6 +32,7 @@ body {
 .sidebar {
   background: #101022;
   background: rgba(16, 16, 34, 0.95);
+  display: block;
   width: 150px;
 }
 
@@ -52,15 +53,18 @@ body {
 
 /*** NAVIGATION ***/
 .nav {
+  display: block;
+}
+.nav__menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.nav--main {
+.nav__menu--main {
   font-size: 14px;
   line-height: 21px;
 }
-.nav--main .nav__link {
+.nav__menu--main .nav__link {
   align-items: center;
   color: #ffffff;
   display: flex;
@@ -68,21 +72,21 @@ body {
   padding: 14.5px 15px;
   transition: all 0.5s ease;
 }
-.nav--main .nav__link:link, .nav--main .nav__link:hover, .nav--main .nav__link:focus, .nav--main .nav__link:active {
+.nav__menu--main .nav__link:link, .nav__menu--main .nav__link:hover, .nav__menu--main .nav__link:focus, .nav__menu--main .nav__link:active {
   text-decoration: none;
 }
-.nav--main .nav__link:hover, .nav--main .nav__link--active {
+.nav__menu--main .nav__link:hover, .nav__menu--main .nav__link--active {
   background: #292a48;
 }
-.nav--main .nav__icon {
+.nav__menu--main .nav__icon {
   height: 16px;
   vertical-align: middle;
   width: 16px;
 }
-.nav--main .nav__anchor {
+.nav__menu--main .nav__anchor {
   margin: 0 10px;
 }
-.nav--main .nav__info {
+.nav__menu--main .nav__info {
   color: #8a8995;
   margin-left: auto;
 }

@@ -60,6 +60,7 @@ body {
 
 .sidebar {
   @include background-opacity($color-secondary, 0.95);
+  display: block;
   width: 150px;
 }
 
@@ -79,53 +80,55 @@ body {
 }
 
 /*** NAVIGATION ***/
-
 .nav {
-  list-style-type: none;
-  @include space-reset;
+  display: block;
+  
+  &__menu {
+    list-style-type: none;
+    @include space-reset;
 
-  &--main {
-    font-size: 14px;
-    line-height: 21px;
+    &--main {
+      font-size: 14px;
+      line-height: 21px;
 
-    & .nav__link {
-      align-items: center;
-      color: #ffffff;
-      display: flex;
-      justify-content: space-between;
-      padding: 14.5px 15px;
-      transition: $trnas-primary;
+      & .nav__link {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 14.5px 15px;
+        transition: $trnas-primary;
 
-      &:link,
-      &:hover,
-      &:focus,
-      &:active {
-        text-decoration: none;
+        &:link,
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+        }
+
+        &:hover,
+        &--active {
+          background: #292a48;
+        }
       }
 
-      &:hover,
-      &--active {
-        background: #292a48;
+      & .nav__icon {
+        height: 16px;
+        vertical-align: middle;
+        width: 16px;
       }
-    }
 
-    & .nav__icon {
-      height: 16px;
-      vertical-align: middle;
-      width: 16px;
-    }
+      & .nav__anchor {
+        margin: 0 10px;
+      }
 
-    & .nav__anchor {
-      margin: 0 10px;
-    }
-
-    & .nav__info {
-      color: $color-data-info;
-      margin-left: auto;
+      & .nav__info {
+        color: $color-data-info;
+        margin-left: auto;
+      }
     }
   }
 }
-
 /*** SECTIONS ***/
 
 .section {
