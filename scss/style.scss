@@ -182,3 +182,21 @@ body {
     background: $color-success;
   }
 }
+
+/*** ICONS ***/
+
+.icon {
+  &--inactive {
+    fill: #ffffff;
+    fill-rule: evenodd;
+  	stroke: #ccc;
+    transition: $trnas-primary;
+  }
+
+  &--active {
+    fill: #21233d;
+    fill-rule: evenodd;
+  	stroke: none;
+    transition: $trnas-primary;
+  }
+}
