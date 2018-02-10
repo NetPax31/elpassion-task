@@ -1,9 +1,19 @@
-$color-body: #ffffff;
+// Color Variables
+
+$white: #ffffff;
+
+// Color Configs
+
+$color-body: $white;
 
 $color-primary: #f6f6f6;
 $color-secondary: #101022;
+$color-secondary-light: #292a48;
+$color-secondary-dark: #21233d;
 
-$color-data-bg: #ffffff;
+$color-link-light: $white;
+
+$color-data-bg: $white;
 $color-data-text: #080606;
 $color-data-info: #8a8995;
 $color-data-border: #e0e0e0;
@@ -98,7 +108,7 @@ body {
 
       & .nav__link {
         align-items: center;
-        color: #ffffff;
+        color: $color-link-light;
         display: flex;
         justify-content: space-between;
         padding: 14.5px 15px;
@@ -113,7 +123,7 @@ body {
 
         &:hover,
         &--active {
-          background: #292a48;
+          background: $color-secondary-light;
         }
       }
 
@@ -206,7 +216,7 @@ body {
   }
 
   &--active {
-    fill: #21233d;
+    fill: $color-secondary-dark;
     fill-rule: evenodd;
   	stroke: none;
     transition: $trnas-primary;
