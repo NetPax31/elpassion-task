@@ -1,0 +1,185 @@
+/*** OVERALL ***/
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff url("../img/background.jpg") no-repeat top center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  overflow: auto;
+}
+
+/*** CONSTRUCTION ***/
+.site {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.app {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+  width: 650px;
+}
+
+.sidebar {
+  background: #101022;
+  background: rgba(16, 16, 34, 0.95);
+  display: block;
+  width: 150px;
+}
+
+.content {
+  background: #f6f6f6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  padding: 10px 15px 0 15px;
+  width: 500px;
+}
+
+.window-buttons {
+  background: #101022;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  padding: 15px;
+}
+
+/*** NAVIGATION ***/
+.nav {
+  display: block;
+}
+.nav__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__menu--main {
+  font-size: 14px;
+  line-height: 21px;
+}
+.nav__menu--main .nav__link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 14.5px 15px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.nav__menu--main .nav__link:link, .nav__menu--main .nav__link:hover, .nav__menu--main .nav__link:focus, .nav__menu--main .nav__link:active {
+  text-decoration: none;
+}
+.nav__menu--main .nav__link:hover, .nav__menu--main .nav__link--active {
+  background: #292a48;
+}
+.nav__menu--main .nav__icon {
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+.nav__menu--main .nav__anchor {
+  margin: 0 10px;
+}
+.nav__menu--main .nav__info {
+  color: #8a8995;
+  margin-left: auto;
+}
+
+/*** SECTIONS ***/
+.section {
+  margin-bottom: 10px;
+}
+.section__info {
+  color: #8a8995;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/*** ITEMS ***/
+.item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 8.5px 12px;
+}
+.item__title {
+  color: #080606;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.item__icon {
+  cursor: pointer;
+}
+
+/*** BUTTONS ***/
+.btn--osx {
+  border-radius: 5px;
+  float: left;
+  height: 10px;
+  margin-right: 10px;
+  width: 10px;
+}
+.btn--close {
+  background: #ff594f;
+}
+.btn--maximize {
+  background: #ffbc1b;
+}
+.btn--minimize {
+  background: #00cd46;
+}
+
+/*** ICONS ***/
+.icon--inactive {
+  fill: #ffffff;
+  fill-rule: evenodd;
+  stroke: #e0e0e0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.icon--active {
+  fill: #21233d;
+  fill-rule: evenodd;
+  stroke: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
